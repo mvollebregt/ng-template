@@ -6,7 +6,8 @@ import {NgForOfContext} from '@angular/common';
   selector: 'puppy-list',
   template: `
   <mat-list>
-    <ng-container *ngTemplateOutlet="puppyTemplate"></ng-container>
+    <ng-template ngFor [ngForOf]="puppies" [ngForTemplate]="puppyTemplate">
+    </ng-template>
   </mat-list>
   `
 })

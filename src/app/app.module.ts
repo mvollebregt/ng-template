@@ -22,7 +22,7 @@ import {InnerComponent} from './inner.component';
   ],
   providers: [],
   bootstrap:
-    [OuterComponent]
+    [OuterComponent, PuppiesComponent]
 })
 
 export class AppModule {
