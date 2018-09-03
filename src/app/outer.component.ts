@@ -2,10 +2,10 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-outer',
-  template: `    
+  template: `
 <app-inner>
-  <ng-template>
-    Projected content
+  <ng-template let-number="number">
+    Projected content {{number}}
   </ng-template>
 </app-inner>`
 })
