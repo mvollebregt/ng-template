@@ -4,7 +4,7 @@ import {Component} from '@angular/core';
   selector: 'app-outer',
   template: `
 <app-inner>
-  <ng-template let-number="number">
+  <ng-template let-number>
     Projected content {{number}}
   </ng-template>
 </app-inner>`
