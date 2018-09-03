@@ -1,16 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {PuppyListComponent} from './puppy-list.component';
+import {PuppiesComponent} from './puppies.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatListModule} from '@angular/material';
 
-import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    PuppyListComponent,
+    PuppiesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatListModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap:
+    [PuppiesComponent]
 })
-export class AppModule { }
+
+export class AppModule {
+}
