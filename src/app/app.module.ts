@@ -4,12 +4,16 @@ import {PuppyListComponent} from './puppy-list.component';
 import {PuppiesComponent} from './puppies.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatListModule} from '@angular/material';
+import {OuterComponent} from './outer.component';
+import {InnerComponent} from './inner.component';
 
 
 @NgModule({
   declarations: [
     PuppyListComponent,
-    PuppiesComponent
+    PuppiesComponent,
+    OuterComponent,
+    InnerComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +22,7 @@ import {MatListModule} from '@angular/material';
   ],
   providers: [],
   bootstrap:
-    [PuppiesComponent]
+    [OuterComponent]
 })
 
 export class AppModule {
